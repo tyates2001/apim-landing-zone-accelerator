@@ -102,7 +102,7 @@ resource vm 'Microsoft.Compute/virtualMachines@2021-04-01' = {
   }
 }
 
-// deploy CI/CD agent, if required
+/* deploy CI/CD agent, if required
 resource vm_CustomScript 'Microsoft.Compute/virtualMachines/extensions@2021-04-01' = if (deployAgent) {
   parent: vm
   name: 'CustomScript'
@@ -121,6 +121,6 @@ resource vm_CustomScript 'Microsoft.Compute/virtualMachines/extensions@2021-04-0
     }
   }
 }
-
+*/
 // outputs
 output id string = vm.id
